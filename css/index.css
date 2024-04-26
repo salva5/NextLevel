@@ -1,0 +1,188 @@
+.navbar {
+  height: 14vh;
+  background-color: #18181c;
+}
+.navbar-brand{
+  gap: 5px;
+  color: greenyellow;
+}
+
+.botones-nav li{
+  margin-right: 20px;
+  border-radius: 5px;
+}
+.botones-nav a {
+  color: white;
+}
+.bton-iniciar-sesión{
+  background-color: greenyellow;
+}
+.bton-iniciar-sesión a{
+  color: black;
+}
+.header{
+  position: sticky;
+  top: 0px;
+  background-color: #18181c;
+  z-index:1;
+}
+main {
+  background-color: rgb(18, 18, 18); ;
+}
+hr {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 15px;
+  border: 1.5px solid green;
+}
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.fondo{
+  position:relative;
+  background-image: url("https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position-y:20%;
+  height: 92vh;
+  width: 100%;
+  opacity: 0.7;
+}
+.contenido-section-principal{
+  position: absolute;
+  text-align: center;
+}
+.text{
+  font-size: x-large;
+}
+.section-principal button{
+  padding: 5px;
+  border-radius: 10px;
+  width:150px;
+  height: 50px;
+  background-color: greenyellow;
+  border: transparent;
+}
+.section-buscador{
+  text-align: center;
+  height: 45vh;
+  gap: 25px;
+}
+.section-buscador form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.section-buscador input{
+  border-radius: 1em;
+  width: 30vw;
+  height: 45px;
+}
+.section-buscador button{
+  width: 100px;
+  height: 45px;
+  border-radius: 1em;
+  background-color: greenyellow;
+}
+.section-populares{
+  margin-top: 2em;
+}
+.subtitulo-populares{
+  margin-bottom: 1em;
+}
+.nav-link{
+  margin: 0 10px;
+}
+.card{
+  margin: 10px;
+  min-width: 200px;
+  border: none;
+  background-color:transparent;
+  transition: all 0.2s linear;
+  border-radius: 1em;
+}
+.card a{
+  position: relative;
+}
+.card img {
+  border-radius: 1em;
+  
+}
+.card:hover .card-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  backdrop-filter:blur(10px) grayscale(50%);
+  height: 100%;
+  border-radius: 1em;
+}
+.card-populares:hover{
+  box-shadow: 1px 1px 25px 1px rgba(172, 255, 47, 0.445);
+}
+
+.card-body {
+  display: none;
+  position: absolute;
+  text-align: center;
+  top:0%;
+  width: 100%;
+}
+.boton-anterior, .boton-siguiente {
+  margin: 4em 1em;
+  background-color: greenyellow;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  border: transparent;
+  
+}
+
+.section-mas-jugados {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.mas-jugados{
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+  margin-bottom: 3em;
+}
+.mas-jugados div{
+  margin: 2em;
+}
+.section-mas-jugados h2{
+  margin-top: 1em;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: green;
+}
+::-webkit-scrollbar-track{
+  background: black;
+}
+footer{
+  background-color: rgb(10, 252, 10);
+}
+.footer-items a{
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
