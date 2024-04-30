@@ -1,21 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+body {
+  background-color: rgb(18, 18, 18); ;
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+}
 .navbar {
   height: 14vh;
   background-color: #18181c;
+  
 }
 .navbar-brand{
   gap: 5px;
-  color: greenyellow;
+  background: linear-gradient(to right, #57b7b1,rgb(80, 253, 0));
+  background-clip: text;
+  color: transparent;
+  font-size: 1.5rem;
 }
 
+.navbar-brand:hover, .navbar-brand:focus{
+  color: white;
+}
 .botones-nav li{
   margin-right: 20px;
   border-radius: 5px;
 }
 .botones-nav a {
+  display: block;
   color: white;
+  text-decoration: none;
+  padding: 0.5em;
+  margin: 0 10px;
+}
+.bton-populares:hover a {
+  color: rgb(80, 253, 0);
+}
+.bton-registrate:hover a {
+  color: rgb(80, 253, 0);
 }
 .bton-iniciar-sesión{
-  background-color: greenyellow;
+  background-color: rgb(80, 253, 0);
+}
+.bton-iniciar-sesión:hover {
+  background-color: black;
+  color:rgb(80, 253, 0);
+  border:rgb(80, 253, 0) 1px solid
+}
+.bton-iniciar-sesión:hover a{
+  color:rgb(80, 253, 0);
+  
 }
 .bton-iniciar-sesión a{
   color: black;
@@ -26,14 +60,11 @@
   background-color: #18181c;
   z-index:1;
 }
-main {
-  background-color: rgb(18, 18, 18); ;
-}
 hr {
   width: 80%;
   margin: 0 auto;
   margin-top: 15px;
-  border: 1.5px solid green;
+  border: 1.5px solid rgb(80, 253, 0);
 }
 section{
   display: flex;
@@ -44,17 +75,34 @@ section{
 }
 
 .fondo{
-  position:relative;
   background-image: url("https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
   background-position-y:20%;
-  height: 92vh;
+  height: 70vh;
   width: 100%;
   opacity: 0.7;
+  
 }
 .contenido-section-principal{
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+}
+.section-principal{
+  margin-top: 50px;
+  animation: principal 1s ease 1;
+}
+@keyframes principal {
+  from{
+    transform: scale(0.5);
+    opacity: 0.6;
+  }
+  to{
+    transform: scale(1);
+  }
 }
 .text{
   font-size: x-large;
@@ -64,8 +112,12 @@ section{
   border-radius: 10px;
   width:150px;
   height: 50px;
-  background-color: greenyellow;
+  background-color: rgb(80, 253, 0);
   border: transparent;
+}
+.section-principal button:hover{
+  transform: scale(0.95);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.877);
 }
 .section-buscador{
   text-align: center;
@@ -86,8 +138,13 @@ section{
 .section-buscador button{
   width: 100px;
   height: 45px;
-  border-radius: 1em;
-  background-color: greenyellow;
+  border: transparent;
+  border-radius: 10px;
+  background-color: rgb(80, 253, 0);
+}
+.section-buscador button:hover{
+  transform: scale(0.95);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.877);
 }
 .section-populares{
   margin-top: 2em;
@@ -99,7 +156,7 @@ section{
   margin: 0 10px;
 }
 .card{
-  margin: 10px;
+  margin: 20px;
   min-width: 200px;
   border: none;
   background-color:transparent;
@@ -123,7 +180,7 @@ section{
   border-radius: 1em;
 }
 .card-populares:hover{
-  box-shadow: 1px 1px 25px 1px rgba(172, 255, 47, 0.445);
+  box-shadow: 1px 1px 25px 1px rgba(80, 253, 0, 0.514);
 }
 
 .card-body {
@@ -135,12 +192,15 @@ section{
 }
 .boton-anterior, .boton-siguiente {
   margin: 4em 1em;
-  background-color: greenyellow;
+  background-color:rgb(80, 253, 0);
   width: 100px;
   height: 50px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: transparent;
-  
+}
+.boton-anterior:hover, .boton-siguiente:hover {
+  transform: scale(0.95);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.877);
 }
 
 .section-mas-jugados {
@@ -170,7 +230,7 @@ section{
   background: black;
 }
 footer{
-  background-color: rgb(10, 252, 10);
+  background-color: rgb(80, 253, 0);
 }
 .footer-items a{
   color: white;
