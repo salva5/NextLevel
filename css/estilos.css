@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+*{
+  box-sizing: border-box;
+}
 body {
   background-color: rgb(18, 18, 18); ;
   font-family: "Jersey 25", sans-serif;
@@ -12,6 +15,7 @@ body {
   background-color: #18181c;
   
 }
+
 .navbar-brand{
   display: flex;
   gap: 5px;
@@ -239,9 +243,7 @@ section{
 }
 
 
-*{
-  box-sizing: border-box;
-}
+
 .fondo-paginas{
   background-image: url("https://img.freepik.com/vector-gratis/fondo-rosa-neon_53876-91656.jpg?w=740&t=st=1714491794~exp=1714492394~hmac=3f40d90ba127771003a4012918ba1da788f092229e6fe3a307d3b6776557522c");
   background-size: cover;
@@ -289,7 +291,6 @@ section{
 }
 input:not(.boton, .check, .input-buscador), select{
   width: 100%;
-  margin-bottom: 20px;
   height: 40px;
   padding: 0px 20px;
   font-size: 1.2rem;
@@ -299,6 +300,17 @@ input:not(.boton, .check, .input-buscador), select{
   outline: none;
   color: rgb(255, 255, 255);
 }
+.form-inicio-sesion div {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.form-inicio-sesion small {
+  padding-left: 10px;
+  color: red;
+}
+
 .boton{
   width: 100%;
   background-color: rgb(80, 253, 0);
@@ -318,21 +330,33 @@ input:not(.boton, .check, .input-buscador), select{
   color: rgb(139, 138, 138);
 }
 
+
+.main-registro {
+  display: flex;
+  justify-content: center;
+}
 .form-registro h1{
   font-size: 2.5rem;
   font-weight: 100;
-  margin: 20px 0;
+  margin: 0px 0 30px 0;
+}
+.form-registro div{
+  margin-bottom: 20px;
+  width: 100%;
+}
+.form-registro small {
+  padding-left: 10px;
+  color: red;
 }
 .section-registro{
   width: 30%;
-  margin: 0 auto;
   background-color:  #18181c;
-  height: 94vh;
   padding: 30px;
+  margin-bottom: 20px;
 }
 .form-registro{
   width: 100%;
-  padding: 40px;
+  padding: 20px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -348,7 +372,57 @@ input:not(.boton, .check, .input-buscador), select{
 
 
 
+/*DETALLE*/
 
+.container-detalle{
+  padding-top: 40px;
+  width: 68%;
+}
+.principal {
+  display: flex;
+  flex-direction: column;
+}
+.div-visual{
+  display: flex;
+  gap: 90px;
+  align-items: center;
+}
+iframe{
+  height: 340px;
+  width: 600px;
+  
+}
+.img-detalle img{
+  width: 200px;
+}
+.img-detalle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.descripcion {
+  margin-top: 20px;
+}
+.container-requisitos{
+  width: 68%;
+}
+.container-requisitos h2{
+  margin: 50px 0 30px 0;
+}
+.div-requisitos{
+  width: 80%;
+  background-color: rgba(95, 94, 94, 0.116);
+  padding: 60px 100px;
+  margin: 0 0 30px 0;
+}
+.col-requisitos{
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+}
+.span-subtitulos{
+  color: rgba(255, 255, 255, 0.493);
+}
 
 
 

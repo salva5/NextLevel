@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <title>Registro | NextLevel</title>
+</head>
+<body class="fondo-paginas">
+  <header class="header-brand">
+    <a class="navbar-brand logo" href="../index.html">
+      <i class="bi bi-controller"></i>
+      <h3>NextLevel</h3>
+    </a>
+  </header>
+  <main class="main-registro">
+    <section class="section-registro">
+      <form  class="form-registro" id="registro">
+        <h1> Registro </h1>
+        <div>
+          <input id ="nombre" type="text" placeholder="Nombre">
+          <small id="error-nombre"></small>
+        </div>
+        <div>
+          <input id ="apellido" type="text" placeholder="Apellido">
+          <small id="error-apellido"></small>
+        </div>
+        <div>
+          <input id ="email" type="text" placeholder="Email">
+          <small id="error-email"></small>
+        </div>
+        <div>
+          <input id ="password" type="password" placeholder="Contraseña">
+          <small id="error-password"></small>
+        </div>
+        <div>
+          <input id ="fecha" type="date" placeholder="dd/mm/aaaa">
+          <small id="error-fecha"></small>
+        </div>
+        <div>
+          <select name="" id="pais">
+            <option value="">Pais</option>
+            <option value="ar">Argentina</option>
+            <option value="col">Colombia</option>
+            <option value="pe">Perú</option>
+            <option value="uy">Uruguay</option>
+            <option value="ve">Venezuela</option>
+            <option value="mx">México</option>
+          </select>
+          <small id="error-pais"></small>
+        </div>
+
+        <label >
+          <input type="checkbox" class="check" id="terminos">
+          <span>Acepto términos y condiciones</span>
+        </label>
+        <small id="error-terminos"></small>
+        <input class="boton" type="submit" value="Iniciar Sesión">
+        <a id="ayuda" class="ayuda" href="registrarse.html">Necesitas ayuda?</a>
+      </form>
+    </section>
+  </main>
+  <script src="../js/registro.js"></script>
+</body>
+</html>
