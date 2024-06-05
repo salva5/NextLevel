@@ -11,11 +11,12 @@ body {
 
 }
 .navbar {
-  height: 14vh;
   background-color: #18181c;
   
 }
-
+.div-nav {
+  margin: 10px 0;
+}
 .navbar-brand{
   display: flex;
   gap: 5px;
