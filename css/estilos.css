@@ -162,39 +162,47 @@ section{
   margin: 0 10px;
 }
 .card{
-  margin: 20px;
+  margin: 35px;
+  padding: 0;
+  position: relative;
   min-width: 200px;
+  width: 310px;
   border: none;
   background-color:transparent;
-  transition: all 0.2s linear;
+  transition: all 0.1s linear;
   border-radius: 1em;
 }
-.card a{
-  position: relative;
-}
+
 .card img {
   border-radius: 1em;
-  
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
 }
 .card:hover .card-body{
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
   backdrop-filter:blur(10px) grayscale(50%);
   height: 100%;
   border-radius: 1em;
+  transform: scale(1.1);
 }
-.card-populares:hover{
+.card-body:hover{
   box-shadow: 1px 1px 25px 1px rgba(80, 253, 0, 0.514);
+
 }
 
 .card-body {
   display: none;
   position: absolute;
   text-align: center;
+  text-shadow: 0 0 4px black;
+  color: white;
   top:0%;
   width: 100%;
+  border-radius: 1em;
+  transition: all 0.2s ease;
 }
 .boton-anterior, .boton-siguiente {
   margin: 4em 1em;
